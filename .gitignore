@@ -1,0 +1,14 @@
+# macOS / IDE
+.DS_Store
+.idea/
+.ipynb_checkpoints/
+__pycache__/
+
+# Large data files: hosted on the GitHub Release "datasets",
+# downloaded automatically by data_utils.get_data()
+03-pandas/data/UofS_access_log
+03-pandas/data/recipeitems.json
+04-matplotlib/data/flights.csv
+
+# Virtual environment
+.venv/

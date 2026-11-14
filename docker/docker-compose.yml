@@ -1,0 +1,11 @@
+services:
+  jupyter:
+    build:
+      context: ..                  # repo root, so requirements.txt can be copied
+      dockerfile: docker/Dockerfile
+    container_name: python-to-machine-learning
+    ports:
+      - "127.0.0.1:8888:8888"      # only reachable from this computer
+    volumes:
+      - ..:/home/nina/work         # the whole repo, so your edits are saved on your computer
+    restart: unless-stopped
